@@ -1,12 +1,16 @@
 module.exports = {
-  content: ['./pages/**/*.{html,js}', './components/**/*.{html,js}'],
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       container: {
+        center: true,
         padding: '2rem',
-        maring: '4rem',
       },
     },
+  },
+  variants: {
+    extend: {},
   },
   plugins: [],
 };
